@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="ICONES\icons8-casa-48.png" type="image/x-icon">
+    <title>Pagina Principal</title>
+    <style>
+        .logo{
+            width: 250px;
+            float: top  ;
+            height: 250px ;
+            z-index: 1; 
+        }
+        
+        body{
+         background-image: url(./IMAGENS/woman-g138c23698_1280.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         background-position: center center;
+         
+        }
+        div{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: none;
+        }
+        .navigation{
+            font-size: 1.1em;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            font-weight: 500;
+            margin-left: 100px;
+            margin-top: -400px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .navigation:hover{
+          text-decoration: none;
+          opacity: 0.6;
+          transition:.5s;
+          
+        }
+        .navigation:hover ::after{
+            transform: scaleX(1);
+        }
+
+        
+    </style>
+</head>
+<body>
+   
+    <div class="container d-flex justify-content-center">
+        <img class="logo" src=".//IMAGENS/LUX (1)_preview_rev_1.png" alt="">
+        <nav style="margin-top: 30px;">
+            <a class="navigation" href="HOME.php">Home</a>
+            <a class="navigation" href="ABOUT.php">About</a>
+            <a class="navigation" href="CATALOGO PAG 1.php">Catalog</a>
+            <a class="navigation" href="CONTATO.php">Contact</a>
+            <a class="navigation" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Login</a>
+            <a class="navigation" href="#" data-bs-toggle="modal" data-bs-target="#myModal2">Register</a>
+        
+        </nav>
+    </div> 
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <div class="modal-body text-center">
+                <h4 class="modal-title">Login</h4><br><br>
+                <input type="text" placeholder="Usuario" name="nome" class="input" required><br><br>
+                <input type="password" placeholder="Senha" name="Password" class="input"required><br><br>
+                <input type="submit" class="btn btn-dark" data-bs-dismiss="modal" style="margin-right: 10px;" name="botao" required ></input> 
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+          <div class="modal-content">
+
+            <div class="modal-body text-center">
+                <h4 class="modal-title">Register</h4><br><br>
+                <input type="text" placeholder="User" class="input"><br><br>
+                <input type="text" placeholder="Email" class="input"><br><br>
+                <input type="text" placeholder="Password" class="input"><br><br>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal" style="margin-right: 10px;">Register</button> 
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+     
+            
+       
+      
+    <center>
+      <p style="color:rgb(255, 255, 255); margin-top:45%;">Desenvolvido por Vinicius Rodrigues, Arthur Nunes , Samuel Ferreira, Davi Santos, Marcos Otávio, Alex Martins, Natan Diniz, Marcelo e João Victor.</p>
+    </center>
+  
+</body>
+</html>
